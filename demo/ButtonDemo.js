@@ -11,12 +11,13 @@ class Demo extends React.Component {
         this.state = {
         }
     }
-
+    handleClick() {
+    }
     render() {
         return (
             <div>
-                <Button tSize="large" tStyle="secondary" disabled >取 消</Button>
-                <Button tSize="large" >提 交</Button>
+                <Button tSize="large" tStyle="secondary" disabled onClick={this.handleClick}>取 消</Button>
+                <Button tSize="large" onClick={this.handleClick}>提 交</Button>
             </div>
         );
     }
