@@ -16,8 +16,12 @@ class Demo extends React.Component {
     render() {
         return (
             <div>
-                <Button tSize="large" tStyle="secondary" disabled onClick={this.handleClick}>取 消</Button>
-                <Button tSize="large" onClick={this.handleClick}>提 交</Button>
+                <div className="demo"><Button tSize="large" onClick={this.handleClick}>提 交</Button></div>
+                <div className="demo"><Button tSize="medium" onClick={this.handleClick}>提 交</Button></div>
+                <div className="demo"><Button tSize="small" onClick={this.handleClick}>提 交</Button></div>
+                <div className="demo"><Button tStyle="primary" onClick={this.handleClick}>提 交</Button></div>
+                <div className="demo"><Button tStyle="secondary" onClick={this.handleClick}>取 消</Button></div>
+                <div className="demo"><Button disabled onClick={this.handleClick}>提 交</Button></div>
             </div>
         );
     }
