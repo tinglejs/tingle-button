@@ -1,13 +1,13 @@
-.tBCPrimary {
-  background: #f86a35;
-}
-.tSecondary {
-  background: #f8f8f8;
-}
 .tButton {
   border: 0;
   text-align: center;
   outline: none;
+}
+.tButton.tButtonPrimary {
+  background: #f86a35;
+}
+.tButton.tButtonSecondary {
+  background: #f8f8f8;
 }
 
 /*# sourceMappingURL=Button.css.map */

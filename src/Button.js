@@ -8,38 +8,32 @@ class Button extends React.Component {
     }
 
     handleClick() {
-        var onClick = this.props.onClick,
-            disabled = this.props.disabled;
-        !disabled && onClick && onClick();
+        var disabled = this.props.disabled;
+
+        !disabled && this.props.onClick();
     }
 
     render() {
-        var cx = React.addons.classSet;
-        var size = this.props.tSize || 'large';
-        var sizeMap = {
-            'small': 'tF12 tH30 tR4',
-            'medium': 'tF16 tH30 tR4',
-            'large': 'tF18 tH44 tR5'
-        };
-        var style = this.props.tStyle || 'primary';
-        var styleMap = {
-            'primary': 'tBCPrimary tFf',
-            'secondary': 'tSecondary tF3'
-        };
-        
-        var classSet = {
-            'tButton': true,
-            'tFAC': true,
-            [this.props.className]: !!this.props.className
-        }
+        var cx = React.addons.classSet,
+            size = this.props.size,
+            feature = this.props.feature,
+            small = size === 'small',
+            medium = size === 'medium',
+            large = size === 'large',
+            primary = feature === 'primary',
+            secondary = feature === 'secondary',
+            classSet = {
+                'tButton tFAC': true,
+                'tOP50': !!this.props.disabled,
+                [this.props.className]: !!this.props.className,
+                'tF12': small,
+                'tF16': medium,
+                'tF18 tH44 tR5': large,
+                'tH30 tR4': small || medium,
+                'tButtonPrimary tFf': primary,
+                'tButtonSecondary tF3': secondary
+            };
 
-        classSet[sizeMap[size]] = true;
-        classSet[styleMap[style]] = true;
-
-        var disabled = this.props.disabled;
-        if (disabled) {
-            classSet['tOP50'] = true;
-        }
         
         return (
             <button className={cx(classSet)} onClick={this.handleClick.bind(this)}>{this.props.children}</button>
@@ -48,6 +42,9 @@ class Button extends React.Component {
 }
 
 Button.defaultProps = {
+    'size': 'large',
+    'feature': 'primary',
+    onClick: function () {}
 }
 
 // http://facebook.github.io/react/docs/reusable-components.html
