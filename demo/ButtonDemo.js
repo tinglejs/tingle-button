@@ -12,16 +12,17 @@ class Demo extends React.Component {
         }
     }
     handleClick() {
+        console.log('onClick')
     }
     render() {
         return (
             <div>
-                <div className="demo"><Button size="large" onClick={this.handleClick}>提 交</Button></div>
-                <div className="demo"><Button size="medium" onClick={this.handleClick}>提 交</Button></div>
-                <div className="demo"><Button size="small" onClick={this.handleClick}>提 交</Button></div>
-                <div className="demo"><Button feature="primary" onClick={this.handleClick}>提 交</Button></div>
-                <div className="demo"><Button feature="secondary" onClick={this.handleClick}>取 消</Button></div>
-                <div className="demo"><Button disabled onClick={this.handleClick}>提 交</Button></div>
+                <div className="demo"><Button size="l" onClick={this.handleClick}>提 交</Button></div>
+                <div className="demo"><Button size="m" onClick={this.handleClick}>提 交</Button></div>
+                <div className="demo"><Button size="s" onClick={this.handleClick}>提 交</Button></div>
+                <div className="demo"><Button type="primary" onClick={this.handleClick}>提 交</Button></div>
+                <div className="demo"><Button type="secondary" onClick={this.handleClick}>取 消</Button></div>
+                <div className="demo"><Button disabled={true} onClick={this.handleClick}>提 交</Button></div>
             </div>
         );
     }
