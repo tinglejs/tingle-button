@@ -20,21 +20,24 @@ class Button extends React.Component {
             large = size === 'l',
             primary = type === 'primary',
             secondary = type === 'secondary',
+            text = type === 'text',
+            disabled = !!this.props.disabled,
             classSet = {
                 'tButton tFAC': true,
-                'tOP50': !!this.props.disabled,
                 [this.props.className]: !!this.props.className,
                 'tF12': small,
-                'tF16': medium,
+                'tF14': medium,
                 'tF18 tH44 tR5': large,
                 'tH30 tR4': small || medium,
-                'tButtonPrimary tFf': primary,
-                'tButtonSecondary tF3': secondary
+                'tBCc tF9': disabled,
+                'tButtonText': text,
+                'tButtonPrimary tFf': primary && !disabled,
+                'tButtonSecondary tF3': secondary && !disabled
             };
 
         
         return (
-            <button className={cx(classSet)} onClick={this.handleClick.bind(this)}>{this.props.children}</button>
+            <button className={cx(classSet)} disabled={disabled} onClick={this.handleClick.bind(this)}>{this.props.children}</button>
         );
     }
 }
