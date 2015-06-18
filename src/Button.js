@@ -1,6 +1,9 @@
 /**
  * Button Component for tinglejs
  */
+
+var classnames = require('classnames');
+
 class Button extends React.Component {
 
     constructor(props) {
@@ -12,8 +15,7 @@ class Button extends React.Component {
     }
 
     render() {
-        var cx = React.addons.classSet,
-            size = this.props.size,
+        var size = this.props.size,
             type = this.props.type,
             small = size === 's',
             medium = size === 'm',
@@ -23,21 +25,21 @@ class Button extends React.Component {
             text = type === 'text',
             disabled = !!this.props.disabled,
             classSet = {
-                'tButton tFAC': true,
                 [this.props.className]: !!this.props.className,
-                'tF12': small,
-                'tF14': medium,
-                'tF18 tH44 tR5': large,
+                'tButton tFAC': true,
+                'tFS12 tPL16 tPR16': small,
+                'tFS14': medium,
+                'tFS18 tH44 tR5': large,
                 'tH30 tR4': small || medium,
-                'tBCc tF9': disabled,
+                'tBCc tFC9': disabled,
                 'tButtonText': text,
                 'tButtonPrimary tFf': primary && !disabled,
-                'tButtonSecondary tF3': secondary && !disabled
+                'tButtonSecondary tFC3': secondary && !disabled
             };
 
         
         return (
-            <button className={cx(classSet)} disabled={disabled} onClick={this.handleClick.bind(this)}>{this.props.children}</button>
+            <button className={classnames(classSet)} disabled={disabled} onClick={this.handleClick.bind(this)}>{this.props.children}</button>
         );
     }
 }
