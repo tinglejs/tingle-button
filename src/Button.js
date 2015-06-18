@@ -33,7 +33,7 @@ class Button extends React.Component {
                 'tH30 tR4': small || medium,
                 'tBCc tFC9': disabled,
                 'tButtonText': text,
-                'tButtonPrimary tFf': primary && !disabled,
+                'tButtonPrimary tFCf': primary && !disabled,
                 'tButtonSecondary tFC3': secondary && !disabled
             };
 
@@ -48,7 +48,7 @@ Button.defaultProps = {
     size: 'l',
     type: 'primary',
     disabled: false,
-    onClick: function () {}
+    onClick() {}
 }
 
 // http://facebook.github.io/react/docs/reusable-components.html

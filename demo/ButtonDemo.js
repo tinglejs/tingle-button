@@ -23,7 +23,7 @@ class Demo extends React.Component {
                 <div className="demo"><Button type="primary" onClick={this.handleClick}>提 交</Button></div>
                 <div className="demo"><Button type="secondary" onClick={this.handleClick}>取 消</Button></div>
                 <div className="demo"><Button disabled={true} onClick={this.handleClick}>提 交</Button></div>
-                <div className="demo"><Button onClick={this.handleClick} type="text">提 交</Button></div>
+                <div className="demo"><Button type="text" onClick={this.handleClick}>提 交</Button></div>
             </div>
         );
     }
