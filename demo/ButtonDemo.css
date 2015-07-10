@@ -6,7 +6,8 @@ button {
   width: 50%;
 }
 .demo {
-  margin-top: 20px;
+  margin: 20px auto;
+  width: 50%;
 }
 button.tFS12 {
   width: 20%;

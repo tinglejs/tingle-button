@@ -29,17 +29,16 @@ class Button extends React.Component {
                 'tButton tFAC': true,
                 'tFS12 tPL16 tPR16': small,
                 'tFS14': medium,
-                'tFS18 tH44 tR5': large,
-                'tH30 tR4': small || medium,
+                'tFS18 tH44 tR5 tLH44': large,
+                'tH30 tR4 tLH30': small || medium,
                 'tBCc tFC9': disabled,
                 'tButtonText': text,
                 'tButtonPrimary tFCf': primary && !disabled,
                 'tButtonSecondary tFC3': secondary && !disabled
             };
-
         
         return (
-            <button className={classnames(classSet)} disabled={disabled} onClick={this.handleClick.bind(this)}>{this.props.children}</button>
+            <div className={classnames(classSet)} disabled={disabled} onClick={this.handleClick.bind(this)}>{this.props.children}</div>
         );
     }
 }
