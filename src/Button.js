@@ -15,16 +15,16 @@ class Button extends React.Component {
     }
 
     render() {
-        var size = this.props.size,
-            type = this.props.type,
-            small = size === 's',
-            medium = size === 'm',
-            large = size === 'l',
-            primary = type === 'primary',
-            secondary = type === 'secondary',
-            text = type === 'text',
-            disabled = !!this.props.disabled,
-            classSet = {
+        var size = this.props.size;
+        var type = this.props.type;
+        var small = size === 's';
+        var medium = size === 'm';
+        var large = size === 'l';
+        var primary = type === 'primary';
+        var secondary = type === 'secondary';
+        var text = type === 'text';
+        var disabled = !!this.props.disabled;
+        var classSet = {
                 [this.props.className]: !!this.props.className,
                 'tButton tFAC': true,
                 'tFS12 tPL16 tPR16': small,
@@ -52,7 +52,10 @@ Button.defaultProps = {
 
 // http://facebook.github.io/react/docs/reusable-components.html
 Button.propTypes = {
-    disabled: React.PropTypes.bool
+    disabled: React.PropTypes.bool,
+    onClick: React.PropTypes.func,
+    size: React.PropTypes.string,
+    type: React.PropTypes.string
 }
 
 module.exports = Button;
