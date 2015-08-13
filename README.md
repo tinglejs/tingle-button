@@ -1,9 +1,9 @@
-## Button
+# Button
 
-- name: button
+- name: tingle-button
 - category: tingle
 - tags: tingle,button,按钮
-- description:  常用按钮
+- description:  tingle 的常用按钮，有大中小三种可选。
 - maintainers: 一篙(80385)
 - version: 1.0.0
 - lastupdate: 2015-08-01
