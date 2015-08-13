@@ -17,18 +17,6 @@
 
 ![效果图](http://gtms02.alicdn.com/tps/i2/TB1aLpEIVXXXXbZapXXdRBY6FXX-334-485.png)
 
-## Best Practice 最佳实践
-
-这是一个 tingle 组件，使用请参考[这里](http://gitlab.alibaba-inc.com/alinwmobile/tingle/tree/master)。
-
-## 样式依赖
-
-```
-<link rel="stylesheet" href="./tingle/tingle-style/src/tingle.css">
-<link rel="stylesheet" href="./src/Button.css">
-```
-
-
 
 ### 可用配置
 
@@ -38,14 +26,6 @@
 |disabled| optional |false|按钮失效|
 |type| optional |primary|按钮的类型, 可选的参数primary和secondary|
 |onClick|optional|-|按钮点击时的回调|
-
-
-
-## API 接口
-
-
-
-
 
 
 ## Links 相关链接
