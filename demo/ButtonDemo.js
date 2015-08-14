@@ -23,6 +23,5 @@ class Demo extends React.Component {
             </div>
         );
     }
-};
-
+}
 React.render(<Demo/>, document.getElementById('TingleDemo'));
