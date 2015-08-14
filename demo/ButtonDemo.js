@@ -1,8 +1,4 @@
-
-var Button = require('../src');
-
-// TODO: move the line to tingle-env
-React.initializeTouchEvents(true);
+let Button = require('../src');
 
 class Demo extends React.Component {
 
