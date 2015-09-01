@@ -1,15 +1,40 @@
+/**
+ * Button Component Style for tingle
+ * @author minjie.lmj
+ *
+ * Copyright 2014-2015, Tingle Team, Alinw.
+ * All rights reserved.
+ */
+
+@require "../node_modules/tingle-style/src/var"
 
 .tButton
   border: 0
   outline none
+  height rem(88)
+  line-height rem(88)
+  width rem(670)
+  border-radius rem(10)
+  font-size rem(28)
 
 .tButtonPrimary
-  background #FF8800
+  background #EA5630
+  color #fff
+  &.hover
+    background #d85330
 
 .tButtonSecondary
-  background #FFF
-  color #666
+  background #f98c24
+  color #fff
+  &.hover
+    background #d17925
 
-.tButtonText
-  color #0288FD
-  background-color transparent
+.tButtonDanger
+  background #fb3419
+  color white
+  &.hover
+    background #e1351e
+
+.tButton.disable
+  color white
+  background rgba(255, 255, 255, 0.4)

@@ -1,17 +1,43 @@
+/**
+ * Button Component Style for tingle
+ * @author minjie.lmj
+ *
+ * Copyright 2014-2015, Tingle Team, Alinw.
+ * All rights reserved.
+ */
 .tButton {
   border: 0;
   outline: none;
+  height: 1.173333333333333rem;
+  line-height: 1.173333333333333rem;
+  width: 8.933333333333334rem;
+  border-radius: 0.133333333333333rem;
+  font-size: 0.373333333333333rem;
 }
 .tButtonPrimary {
-  background: #f80;
+  background: #ea5630;
+  color: #fff;
+}
+.tButtonPrimary.hover {
+  background: #d85330;
 }
 .tButtonSecondary {
-  background: #fff;
-  color: #666;
+  background: #f98c24;
+  color: #fff;
 }
-.tButtonText {
-  color: #0288fd;
-  background-color: transparent;
+.tButtonSecondary.hover {
+  background: #d17925;
+}
+.tButtonDanger {
+  background: #fb3419;
+  color: #fff;
+}
+.tButtonDanger.hover {
+  background: #e1351e;
+}
+.tButton.disable {
+  color: #fff;
+  background: rgba(255,255,255,0.4);
 }
 
 /*# sourceMappingURL=Button.css.map */

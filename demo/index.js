@@ -1,1 +1,2 @@
-module.exports = require('./ButtonDemo');
+require('tingle-context');
+module.exports = require('./demo');

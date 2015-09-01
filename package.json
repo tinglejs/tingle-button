@@ -1,12 +1,15 @@
 {
   "name": "tingle-button",
-  "version": "0.0.0",
-  "description": "The best module ever.",
+  "version": "0.0.1",
+  "description": "tingle 的常用按钮",
   "repository": "https://github.com/tinglejs/tingle-button.git",
   "author": {
     "name": "minjie.lmj",
     "email": ""
   },
+  "maintainers":[
+    "yize <yize.shc@gmail.com>"
+  ],
   "files": [
     "dist",
     "README.md"
@@ -18,20 +21,17 @@
   "dependencies": {
     "classnames": "^2.1.2",
     "fastclick": "~1.0.6",
-    "react": "^0.13.3"
+    "react": "^0.13.3",
+    "tingle-context": "^0.1.0",
+    "tingle-style": "^0.0.2"
   },
   "devDependencies": {
-    "babel-core": "^5.2.17",
-    "babel-loader": "^5.0.0",
-    "browser-sync": "~1.9.1",
-    "del": "^1.1.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sourcemaps": "~1.5.1",
-    "gulp-stylus": "~2.0.1",
-    "gulp-uglify": "^1.2.0",
-    "gulp-webpack": "~1.1.2",
-    "webpack": "^1.8.4"
+    "babel-core": "^5.8.19",
+    "babel-loader": "^5.3.2",
+    "gulp": "^3.9.0",
+    "tingle-dev-tools": "latest"
   },
   "scripts": {},
-  "license": "MIT"
+  "license": "MIT",
+  "screenshots":"http://gtms02.alicdn.com/tps/i2/TB1aLpEIVXXXXbZapXXdRBY6FXX-334-485.png"
 }
