@@ -8,11 +8,11 @@
 .tButton {
   border: 0;
   outline: none;
-  height: getPX(88);
-  line-height: getPX(88);
-  width: getPX(670);
-  border-radius: getPX(10);
-  font-size: getPX(34);
+  height: 1.173333333333333rem;
+  line-height: 1.173333333333333rem;
+  width: 8.933333333333334rem;
+  border-radius: 0.133333333333333rem;
+  font-size: 0.453333333333333rem;
 }
 .tButtonPrimary {
   background: #ea5630;
