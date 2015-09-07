@@ -1,19 +1,20 @@
 {
   "name": "tingle-button",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "tingle 的常用按钮",
   "repository": "https://github.com/tinglejs/tingle-button.git",
   "author": {
     "name": "minjie.lmj",
     "email": ""
   },
-  "maintainers":[
+  "maintainers": [
     "yize <yize.shc@gmail.com>"
   ],
   "files": [
-    "dist",
+    "src",
     "README.md"
   ],
+  "main": "src/index.js",
   "keywords": [
     "tingle-button,Button",
     "button component"
@@ -22,8 +23,8 @@
     "classnames": "^2.1.2",
     "fastclick": "~1.0.6",
     "react": "^0.13.3",
-    "tingle-context": "^0.1.0",
-    "tingle-style": "^0.0.2"
+    "tingle-context": "~0.1.0",
+    "tingle-style": "~0.0.2"
   },
   "devDependencies": {
     "babel-core": "^5.8.19",
@@ -33,5 +34,5 @@
   },
   "scripts": {},
   "license": "MIT",
-  "screenshots":"http://gtms02.alicdn.com/tps/i2/TB1aLpEIVXXXXbZapXXdRBY6FXX-334-485.png"
+  "screenshots": "http://gtms02.alicdn.com/tps/i2/TB1aLpEIVXXXXbZapXXdRBY6FXX-334-485.png"
 }

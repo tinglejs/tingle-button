@@ -1,3 +1,12 @@
+
+0.0.3 / 2015-09-07
+==================
+
+ * remove disabled button hover effect
+ * fix npm output
+ * update tingle-context & tingle-style
+
+
 0.0.1 / 2015-09-01
 ==================
 

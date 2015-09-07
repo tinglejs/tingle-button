@@ -27,7 +27,8 @@ class Button extends React.Component {
         let disabled = !!this.props.disabled;
         let classSet = {
             [this.props.className]: !!this.props.className,
-            'tButton tFAC tTE': true,
+            'tButton tFAC': true,
+            'tTE': !disabled,
             'disable': disabled,
             'tButtonPrimary': primary && !disabled,
             'tButtonSecondary': secondary && !disabled,
