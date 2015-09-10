@@ -4,7 +4,7 @@
 
  * no rem
  * style adjustment
-
+ * add `size` props
 
 0.1.1 / 2015-09-08
 ==================
