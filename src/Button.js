@@ -19,6 +19,7 @@ class Button extends React.Component {
     }
 
     render() {
+        let size = this.props.size;
         let type = this.props.type;
         let primary = type === 'primary';
         let secondary = type === 'secondary';
@@ -29,6 +30,8 @@ class Button extends React.Component {
             [this.props.className]: !!this.props.className,
             'tButton tFAC': true,
             'tTE': !disabled,
+            'tButtonSmall': size === "s",
+            'tButtonMedium': size === "m",
             'disable': disabled,
             'tButtonPrimary': primary && !disabled,
             'tButtonSecondary': secondary && !disabled,
@@ -42,6 +45,7 @@ class Button extends React.Component {
 }
 
 Button.defaultProps = {
+    size: 'l',
     type: 'primary',
     disabled: false,
     onClick() {
@@ -52,7 +56,8 @@ Button.defaultProps = {
 Button.propTypes = {
     disabled: React.PropTypes.bool,
     onClick: React.PropTypes.func,
-    type: React.PropTypes.string
+    type: React.PropTypes.string,
+    size: React.PropTypes.string
 };
 
 Button.displayName = 'Button';

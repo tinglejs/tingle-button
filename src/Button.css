@@ -8,11 +8,11 @@
 .tButton {
   border: 0;
   outline: none;
-  height: 1.173333333333333rem;
-  line-height: 1.173333333333333rem;
-  width: 8.933333333333334rem;
-  border-radius: 0.133333333333333rem;
-  font-size: 0.453333333333333rem;
+  height: 44px;
+  line-height: 44px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 17px;
 }
 .tButtonPrimary {
   background: #ea5630;
@@ -37,7 +37,17 @@
 }
 .tButton.disable {
   color: #fff;
-  background: rgba(255,255,255,0.4);
+  background: #bdbdbd;
+}
+.tButtonSmall {
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+}
+.tButtonMedium {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=Button.css.map */
