@@ -18,7 +18,7 @@
   "keywords": [
     "tingle-button",
     "Button",
-    "button component"
+    "按钮"
   ],
   "dependencies": {
     "classnames": "^2.1.2",
