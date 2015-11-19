@@ -14,8 +14,8 @@ class Button extends React.Component {
         super(props);
     }
 
-    handleClick() {
-        !this.props.disabled && this.props.onClick();
+    handleClick(e) {
+        !this.props.disabled && this.props.onClick(e);
     }
 
     render() {
