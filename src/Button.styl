@@ -5,45 +5,62 @@
  * Copyright 2014-2015, Tingle Team, Alinw.
  * All rights reserved.
  */
+@require "theme"
 
-@require "../node_modules/tingle-style/src/var"
-
-.tButton
+.btn
   border 0
   outline none
-  height 44px
-  line-height 44px
-  border-radius 5px
-  font-size 17px
+  height 40px
+  line-height 40px
+  font-size 16px
+  border-radius 6px
+  display block
+  width 100%
+  padding 0
+  margin 0
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-tap-highlight-color
+  -webkit-tap-highlight-color transparent
+  &.disabled
+  &[disabled]
+    color btn-disabled-color
+    background btn-disabled-bg
+    pointer-events none
 
-.tButtonPrimary
-  background #EA5630
-  color #fff
-  &.hover
-    background #d85330
-
-.tButtonSecondary
-  background #f98c24
-  color #fff
-  &.hover
-    background #d17925
-
-.tButtonDanger
-  background #fb3419
-  color white
-  &.hover
-    background #e1351e
-
-.tButton.disable
-  color white
-  background #bdbdbd
-
-.tButtonSmall
+/* Size */
+.btn-small
   height 24px
   line-height 24px
   font-size 12px
+.btn-large
+  height 44px
+  line-height 44px
+  font-size 18px
 
-.tButtonMedium
-  height 30px
-  line-height 30px
-  font-size 14px
+/* Color Theme */
+.btn-primary
+  background btn-primary-bg
+  color btn-primary-color
+  &:active
+    background btn-primary-bg-active
+    color btn-primary-color-active
+.btn-secondary
+  background btn-secondary-bg
+  color btn-secondary-color
+  &:active
+    background btn-secondary-bg-active
+    color btn-secondary-color-active
+.btn-danger
+  background btn-danger-bg
+  color btn-danger-color
+  &:active
+    background btn-danger-bg-active
+    color btn-danger-color-active
+.btn-text
+  background btn-text-bg
+  color btn-text-color
+  &:active
+    color lighten(btn-text-color, 50%)
+  &.disabled
+  &.disabled:hover
+    background btn-text-bg
+    color btn-text-disabled-color

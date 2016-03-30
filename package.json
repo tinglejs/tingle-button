@@ -1,14 +1,14 @@
 {
   "name": "tingle-button",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "tingle 的常用按钮",
   "repository": "https://github.com/tinglejs/tingle-button.git",
   "author": {
-    "name": "minjie.lmj",
-    "email": "nic-t@163.com"
+    "name": "zhangyang",
+    "email": "px.zhangyang@gmail.com"
   },
   "maintainers": [
-    "yize <yize.shc@gmail.com>"
+    "zhangyang <px.zhangyang@gmail.com>"
   ],
   "files": [
     "src",
@@ -22,18 +22,18 @@
   ],
   "dependencies": {
     "classnames": "^2.1.2",
+    "react": "^15.0.0-rc.2",
+    "react-dom": "^15.0.0-rc.2",
     "tingle-context": "~0.1.0",
     "tingle-style": "~0.2.0"
   },
   "devDependencies": {
     "babel-core": "^5.8.19",
     "babel-loader": "^5.3.2",
-    "gulp": "^3.9.0",
-    "tingle-dev-tools": "latest",
     "fastclick": "^1.0.6",
-    "react": "^0.13.3"
+    "gulp": "^3.9.0",
+    "react": "^15.0.0-rc.2",
+    "tingle-dev-tools": "latest"
   },
-  "scripts": {},
-  "license": "MIT",
-  "screenshots": "https://img.alicdn.com/tps/TB10cIXJpXXXXbaXXXXXXXXXXXX-750-1254.png"
+  "license": "MIT"
 }

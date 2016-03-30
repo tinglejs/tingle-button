@@ -5,48 +5,72 @@
  * Copyright 2014-2015, Tingle Team, Alinw.
  * All rights reserved.
  */
-.tButton {
+.btn {
   border: 0;
   outline: none;
-  height: 44px;
-  line-height: 44px;
-  border-radius: 5px;
-  font-size: 17px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  border-radius: 6px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
 }
-.tButtonPrimary {
-  background: #ea5630;
-  color: #fff;
+.btn.disabled,
+.btn[disabled] {
+  color: #999;
+  background: #ccc;
+  pointer-events: none;
 }
-.tButtonPrimary.hover {
-  background: #d85330;
-}
-.tButtonSecondary {
-  background: #f98c24;
-  color: #fff;
-}
-.tButtonSecondary.hover {
-  background: #d17925;
-}
-.tButtonDanger {
-  background: #fb3419;
-  color: #fff;
-}
-.tButtonDanger.hover {
-  background: #e1351e;
-}
-.tButton.disable {
-  color: #fff;
-  background: #bdbdbd;
-}
-.tButtonSmall {
+/* Size */
+.btn-small {
   height: 24px;
   line-height: 24px;
   font-size: 12px;
 }
-.tButtonMedium {
-  height: 30px;
-  line-height: 30px;
-  font-size: 14px;
+.btn-large {
+  height: 44px;
+  line-height: 44px;
+  font-size: 18px;
+}
+/* Color Theme */
+.btn-primary {
+  background: #f80;
+  color: #fff;
+}
+.btn-primary:active {
+  background: #f28100;
+  color: rgba(255,255,255,0.5);
+}
+.btn-secondary {
+  background: #fff;
+  color: #666;
+}
+.btn-secondary:active {
+  background: #f2f2f2;
+  color: #999;
+}
+.btn-danger {
+  background: #fb3419;
+  color: #fff;
+}
+.btn-danger:active {
+  background: #fb280b;
+  color: rgba(255,255,255,0.5);
+}
+.btn-text {
+  background: transparent;
+  color: #0288fd;
+}
+.btn-text:active {
+  color: #81c3fe;
+}
+.btn-text.disabled,
+.btn-text.disabled:hover {
+  background: transparent;
+  color: #ccc;
 }
 
 /*# sourceMappingURL=Button.css.map */

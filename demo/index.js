@@ -1,4 +1,7 @@
 require('tingle-context');
 
-window.FastClick && FastClick.attach(document.body);
+if (window.FastClick) {
+  window.FastClick.attach(document.body);
+}
+
 module.exports = require('./demo');
